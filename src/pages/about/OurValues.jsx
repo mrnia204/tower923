@@ -1,6 +1,7 @@
 import Card from "../../components/ui/Card";
 import CardContent from "../../components/ui/CardContent";
 import RemixIconContent from '../../components/base/RemixIconContent';
+import AnimatedWrapper from "../../components/animation/AnimatedWrapper";
 
 function OurValues() {
   const values = [
@@ -35,7 +36,7 @@ function OurValues() {
         title="Our Values"
         content="These core values guide our decisions and shape our company culture"
       />
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <AnimatedWrapper className="grid grid-cols-1 md:grid-cols-4 gap-8">
         {values.map((value, index) => (
           <div key={index} className="bg-white rounded-lg p-6 shadow-lg text-center hover:shadow-lg transition-shadow">
             <RemixIconContent 
@@ -46,7 +47,7 @@ function OurValues() {
             />
           </div>
         ))}
-      </div>
+      </AnimatedWrapper>
     </Card>
   );
 };

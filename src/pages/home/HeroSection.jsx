@@ -19,10 +19,10 @@ function HeroSection(){
           cost-effective, and sustainable solutions across Papua New Guinea.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <NavLink to='/'>
+          <NavLink to='/services'>
             <Button className="bg-blue-600 hover:bg-blue-800 text-white">Expolore Our Services</Button>
           </NavLink>
-          <NavLink to='/'>
+          <NavLink to='/contact-us'>
             <Button className="border-2 border-gray-300 bg-white/10 hover:bg-white hover:text-gray-700">Contact Us Today</Button>
           </NavLink>
         </div>

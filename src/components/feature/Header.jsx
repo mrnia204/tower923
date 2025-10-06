@@ -1,50 +1,112 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { X, Menu } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 function Header() {
-  const[active, setActive]=useState(false);
+  const [openMenu, setOpenMenu] = useState(false);
 
-  const pages = [
-    { name: "Home", link: "/"},
-    { name: "About Us", link: "/about-us"},
-  ]
+  const links = [
+    { link: "/", name: "Home" },
+    { link: "/about-us", name: "About Us" },
+    { link: "/services", name: "Services" },
+    { link: "/projects", name: "Projects" },
+    { link: "/our-team", name: "Team" },
+    { link: "/our-partners", name: "Partners" },
+    { link: "/assets", name: "Assets" },
+    { link: "/contact-us", name: "Contact Us" },
+  ];
+
+  const closeMenu = () => setOpenMenu(false);
 
   return (
-    <header className="bg-white shadow-lg sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> 
-        <div className="flex justify-between py-4 items-center">
-          <div className="flex items-center">
-            <NavLink to='/' className="flex items-center space-x-3" data-discover="true">
-              <div className="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center">
-                <span className="text-white font-bold text-xl">T923</span>
-              </div>
-              <div>
-                <h1 className="text-xl font-bold text-gray-900">Tower 923 Ltd</h1>
-                <p className="text-sm text-gray-600">Engineering Excellence</p>
-              </div>
-            </NavLink>
+   
+    <header className="bg-white shadow-md sticky top-0 z-50 border-b border-blue-600">
+      <nav className="px-6 md:px-12 py-4">
+        <div className="flex items-center justify-between">
+          <NavLink className="flex items-center space-x-3" to="/" data-discover="true">
+            <div className=" w-10 h-10 md:w-15 md:h-15 bg-blue-600 rounded-full flex items-center justify-center">
+              <span className="text-white font-bold text-sm md:text-lg">T923</span>
+            </div>
+            <div>
+              <h1 className="text-sm md:text-xl text-gray-800 font-bold">Tower 923 Ltd</h1>
+              <p className="text-xs md:text-sm text-gray-600">Believing In Imposibilities</p>
+            </div>
+          </NavLink>
+          <div className="hidden md:flex items-center space-x-4">
+            {links.map((list, index) => (
+              <NavLink
+                key={index}
+                to={list.link}
+                className="hover:underline active:font-bold focus:text-blue-800 md:text-lg"
+              >
+                {list.name}
+              </NavLink>
+            ))}
           </div>
-          <nav className="hidden md:flex space-x-8">
-            <NavLink to="/" className="hover:text-blue-600 focus:text-blue-600 active:text-blue-600">Home</NavLink>
-            <NavLink to="/about-us" className="hover:text-blue-600 focus:text-blue-600 active:text-blue-600">About Us</NavLink>
-            <NavLink to="/services" className="hover:text-blue-600 focus:text-blue-600 active:text-blue-600">Services</NavLink>
-            <NavLink to="/projects" className="hover:text-blue-600 focus:text-blue-600 active:text-blue-600">Projects</NavLink>
-            <NavLink to="/our-team" className="hover:text-blue-600 focus:text-blue-600 active:text-blue-600">Team</NavLink>
-            <NavLink to="/our-partners" className="hover:text-blue-600 focus:text-blue-600 active:text-blue-600">Partners</NavLink>
-            <NavLink to="/assets" className="hover:text-blue-600 focus:text-blue-600 active:text-blue-600">Assets</NavLink>
-            <NavLink to="/contact-us" className="hover:text-blue-600 focus:text-blue-600 active:text-blue-600">Contact</NavLink>
-          </nav>
 
-          {/**mobile view */}
-          <div className="md:hidden">
-            <button className="p-2 rounded-md text-gray-700 hover:text-blue-600 cursor-pointer">
-              <i className="ri-menu-line text-xl"></i>
+          {/** mobile menu */}
+          <div className="md:hidden flex items-center">
+            <button
+              onClick={() => setOpenMenu(!openMenu)}
+              className="text-white focus:outline-none"
+            >
+              {openMenu ? <X size={28} className="text-blue-600"/> : <Menu size={28} className="text-blue-600" />}
             </button>
           </div>
         </div>
-      </div>
+      </nav>
+
+      {/**mobile drop down with Framer Motion */}
+      <AnimatePresence>
+        {openMenu && (
+          <motion.div 
+            initial={{ opacity: 0, y: -20 }}
+            animate ={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="md:hidden px-4 py-3 space-y-2 flex flex-col bg-white b"
+          >
+            {/** Container for the stagger */}
+            <motion.div 
+              initial="hidden"
+              animate= "visible"
+              exit="hidden"
+              variants={{
+                visible: {
+                  transition: {
+                    staggerChildren: 0.1, // delay between items
+                  },
+                },
+                hidden: {},
+              }}
+              className="space-y-2"
+            >
+              {links.map((list, index) => (
+                <motion.div 
+                  key={index}
+                  variants={{
+                    hidden: {opacity: 0, x: -20},
+                    visible: {opacity: 1, x: 0},
+                  }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <NavLink 
+                    key={index}
+                    to={list.link} 
+                    onClick={closeMenu}
+                    className="text-2xl border-b pt-6 border-gray-300 active:font-bold focus:font-bold w-full block"
+                  >
+                    {list.name}          
+                  </NavLink>
+                </motion.div>
+              ))}
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
-};
+}
 
 export default Header;

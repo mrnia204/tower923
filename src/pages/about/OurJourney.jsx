@@ -1,3 +1,4 @@
+import AnimatedWrapper from "../../components/animation/AnimatedWrapper";
 import Card from "../../components/ui/Card";
 import CardContent from "../../components/ui/CardContent";
 
@@ -9,7 +10,7 @@ function OurJourney() {
         content="Key Milestones in our company's growth"
       />
 
-      <div className="max-w-4xl mx-auto">
+      <AnimatedWrapper className="max-w-4xl mx-auto">
         <div className="relative">
           <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-blue-200"></div>
           <div className="space-y-2">
@@ -64,7 +65,7 @@ function OurJourney() {
             </div>
           </div>
         </div>
-      </div>
+      </AnimatedWrapper>
     </Card>
   );
 };

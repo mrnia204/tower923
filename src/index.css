@@ -8,4 +8,10 @@
 body {
   margin: 0;
   padding: 0;
+
+  font-family: 'Lato', "Poppins" sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Oswald', 'Raleway', sans-serif;
 }

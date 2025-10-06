@@ -1,5 +1,7 @@
+import { motion } from 'framer-motion';
 import RemixIconContent from '../../components/base/RemixIconContent';
 import Card from '../../components/ui/Card';
+import AnimatedWrapper from '../../components/animation/AnimatedWrapper';
 
 function SubHeroSection () {
   const subHero = [
@@ -21,12 +23,17 @@ function SubHeroSection () {
       content: "Proven track record with major clients",
       className: "bg-blue-600"
     }
-  ]
+  ];
+
+
   return (
     <Card>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <AnimatedWrapper className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {subHero.map((item, index) => (
-          <div   key={index} className="text-center p-6 rounded-lg bg-gray-50 hover:bg-blue-50 transition-colors">
+          <div
+            key={index}
+            className="text-center p-6 rounded-lg bg-gray-50 hover:bg-blue-50 transition-colors"
+          >
             <RemixIconContent 
               riClass={item.className}
               icon={item.icon}
@@ -35,7 +42,7 @@ function SubHeroSection () {
             />
           </div>
         ))}
-      </div>
+      </AnimatedWrapper>
     </Card>
     
   );

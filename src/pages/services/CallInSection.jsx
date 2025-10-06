@@ -8,18 +8,12 @@ function CallInSection() {
     <Card className="bg-blue-600 text-white">
       <CardContent 
         title="Ready to Start Your Project?"
-        content="Let's discuss how Tower 923 Ltd can bring your engineering and construction vision to life with our proven expertise and commitment to excellence."
-        className="text-white mb-8"
+        content="Contact us today to discuss your electrical engineering and construction needs"
+        className="text-white"
       >
         <div className="flex items-center justify-center flex-col sm:flex-row gap-4">
           <Button className="text-blue-600 bg-white hover:bg-gray-200 hover:text-blue-600">
             <NavLink to='/contact-us'>Get in Touch</NavLink>
-          </Button>
-          <Button className="text-white bg-gray-600 hover:bg-gray-700">
-            <a href='tel:+67570694334'>
-                <i className="ri-phone-line text-white pr-2"></i>
-              Call +675 70694334
-            </a>
           </Button>
         </div>
       </CardContent>

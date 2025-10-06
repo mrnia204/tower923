@@ -50,7 +50,7 @@ function ProjectsSection() {
       </div> 
 
        <div className="text-center mt-12">
-        <NavLink to="/">
+        <NavLink to="/projects">
           <Button className="bg-blue-600 hover:bg-blue-800 text-white">
             <i className="ri-arrow-right-line pr-1 animate-pulse"></i>
             View All Projects
