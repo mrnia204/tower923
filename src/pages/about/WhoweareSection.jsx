@@ -1,3 +1,4 @@
+import AnimatedWrapper from '../../components/animation/AnimatedWrapper';
 import Card from '../../components/ui/Card';
 
 
@@ -6,7 +7,7 @@ function WhoweareSection () {
   return (
     <Card>
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
-        <div>
+        <AnimatedWrapper>
           <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-6">Who We Are</h2>
           <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-6">
             Established in 2018, Tower 923 Ltd is a PNG-owned diversified contractor
@@ -20,15 +21,15 @@ function WhoweareSection () {
             and sustainable solutions that contribute to Papua New Guinea's development and growth.
           </p>
          
-        </div>
+        </AnimatedWrapper>
 
-        <div className="relative">
+        <AnimatedWrapper animation='zoom-in' className="relative">
           <img 
             src={teamImg} 
             alt="Tower 923 Team" 
             className="rounded-lg shadow-lg object-cover w-full h-96 hover:shadow-lg"
           />
-        </div>
+        </AnimatedWrapper>
       </div>
     </Card>
   );

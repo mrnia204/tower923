@@ -6,7 +6,7 @@ function HeroSection() {
   return (
     <HeroHeader 
       title="Assets & Facilities"
-      content="Strategic locations and reliable assets enabling efficient project delivery acros"
+      content="Strategic locations and reliable assets enabling efficient project delivery across"
       bgHeroImg={bgHeroImg}
     />
   );

@@ -1,3 +1,4 @@
+import AnimatedWrapper from '../../components/animation/AnimatedWrapper';
 import Button from '../../components/base/Button';
 import Form from '../../components/feature/Form';
 import Card from '../../components/ui/Card';
@@ -52,7 +53,7 @@ function Message () {
           </p>
           <div className="space-y-6">
             {contactInfo.map((item, index) => (
-              <div className="bg-gray-50 rounded-lg p-6">
+              <AnimatedWrapper className="bg-gray-50 rounded-lg p-6">
             
                 <div key={index} className="flex items-start">
                   <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-4 mt-1">
@@ -70,7 +71,7 @@ function Message () {
                     </div>
                   </div>
                 </div>
-              </div>
+              </AnimatedWrapper>
             ))}
           </div>
           <div className="bg-blue-50 rounded-lg mt-8 p-6">

@@ -11,16 +11,14 @@ function CallInSection() {
         content="Let's discuss how we can bring your engineering and construction projects to life"
         className="text-white mb-8"
       >
-        <NavLink to="/" className="m-4">
+        <div className="flex flex-col sm:flex-row gap-4 mx-auto justify-center items-center">
           <Button className="text-blue-600 bg-white hover:bg-gray-200 hover:text-blue-600">
-            Explore Our Services
+            <NavLink to='/services'>Explore Our Services</NavLink>
           </Button>
-        </NavLink>
-        <NavLink to="/" className="m-4">
           <Button className="text-white bg-gray-600 hover:bg-gray-700">
-            Contact us Today
+            <NavLink to='/contact-us'> Contact us Today</NavLink>
           </Button>
-        </NavLink>
+        </div>
       </CardContent>
     </Card>
   );
