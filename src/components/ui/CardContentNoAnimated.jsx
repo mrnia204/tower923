@@ -1,3 +1,5 @@
+import React from "react";
+
 import AnimatedWrapper from "../animation/AnimatedWrapper";
 
 function CardContent({title, children, className="", content}) {

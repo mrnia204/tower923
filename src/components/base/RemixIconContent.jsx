@@ -1,3 +1,5 @@
+import React from "react";
+
 function RemixIconContent({riClass, children, icon, title, pClass="", content, className="", h3Class="" }) {
   return(
     <>

@@ -1,3 +1,4 @@
+import React from "react";
 function HeroHeader ({title, content, children, bgHeroImg}) {
 
   return(

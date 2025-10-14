@@ -1,3 +1,4 @@
+import React from "react";
 export const AnimationVariants = {
   "fade-up" : {
     hidden: { opacity: 0, y: 50 },

@@ -1,3 +1,5 @@
+import React from "react";
+
 function Card({children, className='bg-white'}) {
   return (
     <section className={`${className} py-12 sm:py-16 lg:py-20`}>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import AnimatedWrapper from "../animation/AnimatedWrapper";
 import Button from "../base/Button";
 
