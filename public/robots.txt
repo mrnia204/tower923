@@ -1,3 +1,37 @@
+# ----------------------------------------
+# Tower 923 Ltd - robots.txt
+# Author: Tower 923 Ltd (https://tower923.com)
+# Purpose: SEO optimization and proper crawling setup
+# ----------------------------------------
+
+# Allow all search engines to crawl the site
 User-agent: *
 Allow: /
+
+# Prevent indexing of build or temp files (if any exist)
+Disallow: /private/
+Disallow: /temp/
+Disallow: /build/
+Disallow: /drafts/
+
+# Sitemap location (important for Google & Bing)
 Sitemap: https://tower923.com/sitemap.xml
+
+# ----------------------------------------
+# Additional hints for major search engines
+# ----------------------------------------
+
+# Googlebot special directives
+User-agent: Googlebot
+Allow: /
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
+
+# Short crawl-delay (optional, only respected by some bots)
+Crawl-delay: 2
+
+# ----------------------------------------
+# End of file
+# ----------------------------------------
