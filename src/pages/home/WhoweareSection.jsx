@@ -28,7 +28,8 @@ function WhoweareSection() {
         <div className="relative">
           <img 
             src={teamImg} 
-            alt="Tower 923 Team" 
+            alt="Tower 923  Electrician Team" 
+            loading='lazy'
             className="rounded-lg shadow-lg object-cover w-full h-96 hover:shadow-lg"
           />
         </div>

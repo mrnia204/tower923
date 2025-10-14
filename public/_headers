@@ -1,0 +1,17 @@
+/*
+  # Security Headers
+  X-Frame-Options: SAMEORIGIN
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer-when-downgrade
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://tower923.com; font-src 'self'; connect-src 'self'; frame-ancestors 'self'
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+
+/*
+  # Caching
+  Cache-Control: public, max-age=0, must-revalidate
+
+/*
+  # SEO & Social
+  Link: <https://tower923.com/assets/Tower923_Limited_Electrical_Services.webp>; rel=preload; as=image
+

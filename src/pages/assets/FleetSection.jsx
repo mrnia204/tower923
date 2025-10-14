@@ -2,42 +2,10 @@ import AnimatedWrapper from "../../components/animation/AnimatedWrapper";
 import Card from "../../components/ui/Card";
 import CardContent from "../../components/ui/CardContent";
 
-function FleetSection() {
-  const land_curiser_1 = 'https://images.unsplash.com/photo-1623659791251-b4d0881bb9d2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-  const land_curiser_2 = 'https://images.unsplash.com/photo-1623264025997-7f3e64bec444?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-  const toyota_hilux = 'https://images.unsplash.com/photo-1629807390858-2d19718c41d3?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
-  const toyota_mark_x = 'https://images.unsplash.com/photo-1716237923565-b5368f0cad10?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
+import { fleet } from "../../data/images";
 
-  const fleet = [
-    {
-      imgUri: land_curiser_1,
-      name: "Toyota Land Cruiser",
-      office: "Lae",
-      description: "Heavy Duty 4WD",
-      content: "Remote site access and equipment transport",
-    },
-     {
-      imgUri: land_curiser_2,
-      name: "Toyota Land Cruiser",
-      office: "Mt. Hagen",
-      description: "Heavy Duty 4WD",
-      content: "Highland region project access",
-    },
-     {
-      imgUri: toyota_hilux,
-      name: "Toyota Hilux",
-      office: "Port Moresby",
-      description: "Utility Vehicle",
-      content: "Urban operations and light equipment transport",
-    },
-     {
-      imgUri: toyota_mark_x,
-      name: "Toyota Mark X",
-      office: "Port Moresby",
-      description: "xecutive Vehicle",
-      content: "Business meetings and client relations",
-    },
-  ]
+function FleetSection() {
+  
   return (
     <Card className="bg-gray-50">
       <CardContent 
@@ -48,7 +16,7 @@ function FleetSection() {
         {fleet.map((list, index) => (
           <AnimatedWrapper key={index} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
             <div className="aspect-w-4 aspect-h-3">
-              <img src={list.imgUri} alt={list.name} className="w-full h-48 object-cover object-center"/>
+              <img src={list.imgUri} alt={list.name}  loading='lazy' className="w-full h-60 object-cover object-center"/>
             </div>
             <div className="p-6">
               <div className="flex justify-between items-start mb-3">

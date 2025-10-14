@@ -3,6 +3,8 @@ import { NavLink } from "react-router-dom";
 import { X, Menu } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
+import Towerlogo from '../../assets/Tower923_Limited_Electrical_Services.webp';
+
 function Header() {
   const [openMenu, setOpenMenu] = useState(false);
 
@@ -25,11 +27,11 @@ function Header() {
       <nav className="px-6 md:px-12 py-4">
         <div className="flex items-center justify-between">
           <NavLink className="flex items-center space-x-3" to="/" data-discover="true">
-            <div className=" w-10 h-10 md:w-15 md:h-15 bg-blue-600 rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-sm md:text-lg">T923</span>
+            <div className=" w-15 h-15 md:w-15 md:h-15 bg-blue-300 rounded-full flex items-center justify-center">
+              <span><img src={Towerlogo} alt="Tower923 official logo" className="w-12 h-12"/></span>
             </div>
             <div>
-              <h1 className="text-sm md:text-xl text-gray-800 font-bold">Tower 923 Ltd</h1>
+              <h1 className="text-sm md:text-xl text-gray-800 font-bold">Tower923 Ltd</h1>
               <p className="text-xs md:text-sm text-gray-600">Believing In Imposibilities</p>
             </div>
           </NavLink>

@@ -53,9 +53,9 @@ function Message () {
           </p>
           <div className="space-y-6">
             {contactInfo.map((item, index) => (
-              <AnimatedWrapper className="bg-gray-50 rounded-lg p-6">
+              <AnimatedWrapper key={index} className="bg-gray-50 rounded-lg p-6">
             
-                <div key={index} className="flex items-start">
+                <div className="flex items-start">
                   <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-4 mt-1">
                     <i className={`${item.iconMain} text-xl text-blue-600`}></i>
                   </div>
@@ -63,7 +63,7 @@ function Message () {
                     <h3 className="text-lg font-semibold text-gray-900 mb-2">{item.location}</h3>
                     <div className="space-y-1 text-gray-600">
                       {item.info.map((list, i) => (
-                        <p ke={i} className="flex items-center hover:text-blue-600">
+                        <p key={i} className="flex items-center hover:text-blue-600">
                           <i className={`${list.icon} mr-2`}></i>
                           <span>{list.name}</span>
                         </p>
