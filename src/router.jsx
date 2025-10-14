@@ -25,4 +25,4 @@ export const router = createBrowserRouter([
       { path: "/contact-us", element: <Contact />},
     ]
   }
-])
+]);
