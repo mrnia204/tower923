@@ -26,8 +26,9 @@ function WhoweareSection () {
         <AnimatedWrapper animation='zoom-in' className="relative">
           <img 
             src={teamImg} 
-            alt="Tower 923 Team" 
+            alt="Tower 923 Electrician Team" 
             className="rounded-lg shadow-lg object-cover w-full h-96 hover:shadow-lg"
+            loading='lazy'
           />
         </AnimatedWrapper>
       </div>

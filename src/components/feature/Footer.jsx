@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom";
 
+import Towerlogo from '../../assets/Tower923_Limited_Electrical_Services.webp';
+
 function Footer() {
   const contact = [
     {
@@ -27,14 +29,16 @@ function Footer() {
 
   return (
     <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-9/12 mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Top Section: Company Info + Quick Links */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
-              <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">T923</span>
+              <div className="w-12 h-12 bg-blue-300 rounded-lg flex items-center justify-center">
+                <span>
+                  <img src={Towerlogo} alt="Tower923 official log0"  className="w-12 h-12"/>
+                </span>
               </div>
               <div>
                 <h3 className="text-xl font-bold">Tower 923 Ltd</h3>
