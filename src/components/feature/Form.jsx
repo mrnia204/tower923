@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import AnimatedWrapper from "../animation/AnimatedWrapper";
-import Button from "../base/Button";
+import emailjs from '@emailjs/browser';
 
+import AnimatedWrapper from "../animation/AnimatedWrapper";
 
 function Form() {
   const [formData, setFormData] = useState({
@@ -75,31 +75,50 @@ function Form() {
     const validationError = validateFormHandler();
     setErrors(validationError); // this set first so it triggers a re-render
 
-    if (Object.keys(validationError).length > 0) {
-      console.log(validationError);
-      
+    if (Object.keys(validationError).length > 0) {      
       return; // stop here, form invalid
     };
 
     // form is valid
     setSubmitted(true);
-    alert("Form submitted successfully");
-
-    //reset form
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      company: "",
-      service: "",
-      message: "",
+    
+    // send using EmailJS
+   
+    emailjs.send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      {
+        name: formData.name || "N/A",
+        email: formData.email || "N/A",
+        phone: formData.phone || "N/A",
+        company: formData.company || "N/A",
+        service: formData.service || "N/A",
+        message: formData.message || "N/A",
+        time: new Date().toLocaleString(),
+      },
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    ).then(
+      (response) => {
+        console.log("✅ Email sent successfully!", response.status, response.text);
+        alert("Your message has been sent successfully!");
+      },
+      (error) => {
+        console.error("❌ Failed to send email:", error);
+        alert("Something went wrong. Check console for details.");
+      }
+    )
+    .finally(() => {
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        company: "",
+        service: "",
+        message: "",
+      });
+      setTimeout(() => setSubmitted(false), 3000);
     });
-
-    setTimeout(() => setSubmitted(false), 3000);
   }
-
-
-
 
   return(
     <form onSubmit={submitHandler} id="contact-form" noValidate> 
