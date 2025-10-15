@@ -32,7 +32,7 @@ function OurJourney() {
                 <div className="bg-white rounded-lg p-6 shadow-lg">
                   <h3 className="text-lx font-semibold text-gray-900 mb-2">2018-2019</h3>
                   <p className="text-gray-700">
-                    JICA Ramu Transmission Line consultancy and project reinforcement (K224M)
+                    JICA Ramu Transmission Line consultancy and project reinforcement
                   </p>
                 </div>
               </div>
@@ -43,7 +43,7 @@ function OurJourney() {
                 <div className="bg-white rounded-lg p-6 shadow-lg">
                   <h3 className="text-lx font-semibold text-gray-900 mb-2">2021</h3>
                   <p className="text-gray-700">
-                    AusAID Power Sector Development energy consultancy (US$60M project)
+                    AusAID Power Sector Development energy consultancy
                   </p>
                 </div>
               </div>

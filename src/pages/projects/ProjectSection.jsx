@@ -69,12 +69,14 @@ function ProjectSections() {
                     <span>{list.location}</span>
                   </div>
                 </div>
+                {/**
                 <div className="mt-4 lg:mt-0 lg:ml-6">
                   <div className="text-right">
                     <div className=" text-xl md:text-2xl font-bold text-blue-600">{list.amount}</div>
                     <div className="text-sm text-gray-500">Project Value</div>
                   </div>
                 </div>
+                */}
               </div>
             </div>
           </AnimatedWrapper>
