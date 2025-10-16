@@ -12,7 +12,7 @@ function Message () {
         {icon: "ri-map-pin-line", name: "Rarangau, Sect 42 Lot 63"},
         {icon: "ri-mail-send-line", name: "P.O. Box 1-3, Mt. Hagen, WHP"},
         {icon: "ri-phone-line", name: "+675 70694334"},
-        {icon: "ri-at-line", name: "dougsiwi18@gmail.com"},
+        {icon: "ri-at-line", name: "info@tower923.com"},
       ],
     },
     {
@@ -22,7 +22,7 @@ function Message () {
         {icon: "ri-map-pin-line", name: "Rarangau, Sect 42 Lot 63"},
         {icon: "ri-mail-send-line", name: "P.O. Box 1-3, Mt. Hagen, WHP"},
         {icon: "ri-phone-line", name: "+675 70694334"},
-        {icon: "ri-at-line", name: "dougsiwi18@gmail.com"},
+        {icon: "ri-at-line", name: "info@tower923.com"},
       ],
     },
     {
@@ -32,7 +32,7 @@ function Message () {
         {icon: "ri-map-pin-line", name: "Rarangau, Sect 42 Lot 63"},
         {icon: "ri-mail-send-line", name: "P.O. Box 1-3, Mt. Hagen, WHP"},
         {icon: "ri-phone-line", name: "+675 70694334"},
-        {icon: "ri-at-line", name: "dougsiwi18@gmail.com"},
+        {icon: "ri-at-line", name: "info@tower923.com"},
       ],
     },
 

@@ -1,3 +1,10 @@
+//supliers
+import InterlecAustraliaPTY from '../assets/interlec-australia-pty-ltd.jpg';
+import ABBLogo from '../assets/ABB-logo-RGB.jpg';
+import SierraSupport from '../assets/Sierra-support-service.png';
+import CelticSolor from '../assets/Celtic-power-australia.png';
+import HexeisSolution from '../assets/Hexeis-solution.png';
+
 const imgUri = 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=687';
 
 const supplierImg1 = 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170';
@@ -60,31 +67,31 @@ export const Supplier = [
     company: "Interlec Australia",
     content: "Electrical infrastructure solutions",
     location: "Australia",
-    imgUri:  supplierImg1,
+    imgUri:  InterlecAustraliaPTY,
   },
   {
     company: "ABB Australia",
     content: "Power and automation technologies",
     country: "Australia",
-    imgUri:  supplierImg1,
+    imgUri:  ABBLogo,
   },
   {
     company: "Sierra Support Services",
     content: "Technical support and maintenance",
     country: "Australia",
-    imgUri:  supplierImg1,
+    imgUri:  SierraSupport,
   },
   {
     company: "Celtic Power Australia",
     content: "Power transmission equipment",
     country: "Australia",
-    imgUri:  supplierImg1,
+    imgUri:  CelticSolor,
   },
   {
     company: "Hexeis Australia",
     content: "Electrical components and systems",
     country: "Australia",
-    imgUri:  supplierImg1,
+    imgUri:  HexeisSolution,
   },
   {
     company: "Transnet Australia",

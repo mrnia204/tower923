@@ -9,21 +9,21 @@ function Footer() {
       location: "Head Office - Mt. Hagen",
       address: "Tarangau, Sect 42 Lot 63",
       postal: "P.O. Box 103, Mt. Hagen, WHP",
-      email: "dougsiwi18@gmail.com",
+      email: "info@tower923.com",
       phone: "+675 70694334",
     },
     {
       location: "Port Moresby Office",
       address: "9 Mile, Sect 187 Lot 21",
       postal: "P.O. Box 1213, Waigani, NCD",
-      email: "dougsiwi18@gmail.com",
+      email: "info@tower923.com",
       phone: "+675 70171910",
     },
     {
       location: "Lae Office",
       address: "Lae, Morobe Province",
       postal: "C/- Traisa Transport, P.O. Box 840",
-      email: "dougsiwi18@gmail.com",
+      email: "info@tower923.com",
       phone: "+675 70694334",
     },
   ];
@@ -84,7 +84,7 @@ function Footer() {
                 <NavLink to="/services" className="text-gray-300 hover:text-white">Our Services</NavLink>
               </li>
               <li>
-                <NavLink to="/team" className="text-gray-300 hover:text-white">Our Team</NavLink>
+                <NavLink to="/our-team" className="text-gray-300 hover:text-white">Our Team</NavLink>
               </li>
               <li>
                 <NavLink to="/contact-us" className="text-gray-300 hover:text-white">Contact</NavLink>

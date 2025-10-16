@@ -21,7 +21,7 @@ function About() {
         />
         <meta
           name="keywords"
-          content="Tower 923, Tower923, engineering, construction, EPC, PNG contractor, Papua New Guinea, power distribution, renewable energy, telecommunications, civil works, engineering company PNG, construction company PNG"
+          content="Tower 923, Tower923, engineering, construction, EPC, PNG contractor, Papua New Guinea, power distribution, power distribution in Port Moresby, power distribution in Hage, renewable energy, telecommunications, civil works, engineering company PNG, construction company PNG, electrical provider in Port Moresby"
         />
         <link rel="canonical" href="https://tower923.com/about-us" />
 
