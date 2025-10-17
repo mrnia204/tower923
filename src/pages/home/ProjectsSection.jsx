@@ -38,7 +38,6 @@ function ProjectsSection() {
           <div key={index} className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl hover:bg-gradient-to-b hover:from-blue-100 hover:to-purple-400">
             <div className="flex items-center justify-between mb-4">
               <span className="bg-blue-100 text-sm font-medium px-3 py-1 rounded-full text-blue-800">{project.year}</span>
-              <span className="text-2xl font-bold text-green-600">{project.cost}</span>
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">{project.title}</h3>
             <p className="text-gray-600 items-center">
