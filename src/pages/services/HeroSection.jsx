@@ -5,8 +5,8 @@ function HeroSection() {
 
   return (
     <HeroHeader 
-      title="Our Services"
-      content="Comprehensive electrical engineering and construction services across Papua New Guinea"
+      title="Services Catalogue"
+      content="Papua New Guinea's leading engineering and infrastructure company delivering advanced energy and construction solutions across Port Moresby, Lae, Kimbe, Mt Hagen, and Goroka"
       bgHeroImg={bgHeroImg}
     />
   );

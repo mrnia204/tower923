@@ -2,6 +2,8 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 import Towerlogo from '../../assets/Tower923_Limited_Electrical_Services.webp';
+import { li } from "framer-motion/client";
+
 
 function Footer() {
   const contact = [
@@ -26,6 +28,16 @@ function Footer() {
       email: "info@tower923.com",
       phone: "+675 70694334",
     },
+  ];
+
+  const links = [
+    { link: "/", name: "Home" },
+    { link: "/about-us", name: "About Us" },
+    { link: "/services", name: "Services" },
+    { link: "/projects", name: "Projects" },
+    { link: "/our-partners", name: "Partners" },
+    { link: "/assets", name: "Assets" },
+    { link: "/contact-us", name: "Contact Us" },
   ];
 
   return (
@@ -74,21 +86,11 @@ function Footer() {
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              <li>
-                <NavLink to="/" className="text-gray-300 hover:text-white">Home</NavLink>
-              </li>
-              <li>
-                <NavLink to="/about-us" className="text-gray-300 hover:text-white">About Us</NavLink>
-              </li>
-              <li>
-                <NavLink to="/services" className="text-gray-300 hover:text-white">Our Services</NavLink>
-              </li>
-              <li>
-                <NavLink to="/our-team" className="text-gray-300 hover:text-white">Our Team</NavLink>
-              </li>
-              <li>
-                <NavLink to="/contact-us" className="text-gray-300 hover:text-white">Contact</NavLink>
-              </li>
+              {links.map((link) => (
+                <li key={link.name}>
+                  <NavLink to={link} className="text-gray-300 hover:text-white">{link.name}</NavLink>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

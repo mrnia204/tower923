@@ -8,14 +8,12 @@ function SpecialFocusSection() {
       <AnimatedWrapper className="max-w-4xl mx-auto text-center bg-white  rounded-lg shadow-lg p-8">
         <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-8">Special Focus</h2>
         <div className="flex items-center justify-center mb-4">
-          <i className="ri-flashlight-fill text-2xl md:text-4xl text-blue-600"></i>
-          <h3 className="text-xl md:text-2xl font-semibold text-blue-600"> 
-            Engineering, Procurement and Construction of Power Lines
-          </h3>
         </div>
         <p className="text-base md:text-lg text-gray-700">
-          Our core expertise lies in the complete lifecycle management of power 
-          line projects, from initial engineering design through procurement and final construction.
+          We provide end-to-end expertise from feasibility and design through to construction, 
+          commissioning, and long-term maintenance. Our goal is to power PNG's sustainable future 
+          through reliable, safe, and innovative engineering solutions 
+          that meet international standards while being suited to Papua New Guinea's challenging conditions.
         </p>
       </AnimatedWrapper>
     </Card>

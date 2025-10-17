@@ -20,7 +20,7 @@ function Home() {
         />
         <meta
           name="keywords"
-          content="Tower 923, Tower923, PNG engineering company, construction PNG, civil works, electrical engineering, renewable energy PNG, telecommunications, EPC contractor, Papua New Guinea projects, power distribution, infrastructure development"
+          content="Tower 923, construction companies in papua new guinea, Construction Companies in PNG, Tower923, PNG engineering company, construction PNG, civil works, electrical engineering, renewable energy PNG, telecommunications, EPC contractor, Papua New Guinea projects, power distribution, infrastructure development"
         />
         <link rel="canonical" href="https://tower923.com/" />
 
