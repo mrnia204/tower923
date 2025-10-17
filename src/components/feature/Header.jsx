@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { X, Menu } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 
 import Towerlogo from '../../assets/Tower923_Limited_Electrical_Services.webp';
 
@@ -13,7 +13,6 @@ function Header() {
     { link: "/about-us", name: "About Us" },
     { link: "/services", name: "Services" },
     { link: "/projects", name: "Projects" },
-    { link: "/our-team", name: "Team" },
     { link: "/our-partners", name: "Partners" },
     { link: "/assets", name: "Assets" },
     { link: "/contact-us", name: "Contact Us" },

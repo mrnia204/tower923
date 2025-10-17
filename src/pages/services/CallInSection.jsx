@@ -7,8 +7,8 @@ function CallInSection() {
   return(
     <Card className="bg-blue-600 text-white">
       <CardContent 
-        title="Ready to Start Your Project?"
-        content="Contact us today to discuss your electrical engineering and construction needs"
+        title="Ready to Power PNG's Sustainable Future?"
+        content="Contact us today to discuss your engineering and infrastructure needs. We deliver reliable, safe, and innovative solutions across Port Moresby, Lae, Kimbe, Mt Hagen, and Goroka."
         className="text-white"
       >
         <div className="flex items-center justify-center flex-col sm:flex-row gap-4">
